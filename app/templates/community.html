@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Current community:</h2>
+    {% for user in users %}
+        {% include '_user.html' %}
+    {% endfor %}
+{% endblock %}
